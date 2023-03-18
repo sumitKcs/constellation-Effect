@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Spectrum Mouse Trail" />
+    <meta property="og:image" itemprop="image"
+        content="https://sumitkcs.github.io/spectrum-animation/assets/img/preview-meta.png" />
+    <meta property="og:image:alt"
+        content="The words 'Not all who wander are lost' set against a starry night background. Click to visit website." />
+    <meta property="og:description" content="Project by Er. Sumit Kumar" />
+    <meta property="og:url" content="https://sumitKcs.github.io/spectrum-animation/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta name="twitter:card" content="summary" />
+    <meta name="description" content="A constellation efffect animation app. Click to visit website." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Canvas API, mouse trail, animation, particles, constellation" />
+    <meta name="author" content="Er. Sumit Kumar" />
+    <title>Constellation Effect</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link href="assets/css/index.css" rel="stylesheet" media="all">
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="canonical" href="https://sumitKcs.github.io/spectrum-animation" />
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+
+
+
+    <div class="control-container" id="control-container">
+
+        <div class="effect-container" id="effect-container">
+            <label for="effect">Effects &nbsp;</label>
+            <select name="effect" id="effect-selector" class="effect-selector">
+                <option value="1" class="effect effect1" id="effect11">Constellation</option>
+                <option value="2" class="effect effect2" id="effect12">Rainbow</option>
+                <option value="3" class="effect effect3" id="effect13">Trail</option>
+            </select>
+        </div>
+
+        <div class="range-container bubble-range" id="bubble-range">
+            <label for="bubble-range">Bubble Size</label>
+            <input aria-label="bubble-range" type="range" name="bubble-range" data-bubble-range min="7" max="20"
+                step="1" value="12">
+        </div>
+        <div class="range-container trail-range" id="trail-range">
+            <label for="trail-range">Trail Size</label>
+            <input aria-label="trail-range" type="range" name="trail-range" data-trail-range min="0.01" max="0.2"
+                step="0.01">
+        </div>
+    </div>
+    <!-- <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="https://sumitkcs.github.io/spectrum-animation/assets/img/body-preview.png">
+        <meta itemprop="width" content="1200">
+        <meta itemprop="height" content="800">
+    </span> -->
+
+
+    <script defer src="assets/js/app.js" type="module"></script>
+</body>
+
+</html>
